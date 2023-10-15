@@ -1,7 +1,6 @@
 # BUPT-OS-LLM
-BUPT 2023 autumn operating system course big assignment - LLM local deployment project
-
-# 项目名称
+> BUPT 2023 autumn operating system course big assignment - LLM local deployment project
+>
 
 ## 项目描述
 
@@ -11,23 +10,15 @@ BUPT 2023 autumn operating system course big assignment - LLM local deployment p
 
 > 为什么选择这些？
 
-- 选择百川的理由：
-- 选择Go语言的理由：
-- 选择Bootstrap的理由：
-
 ## 项目结构
 
 ```
 .
-├── go.mod				# 应用程序的入口文件，包含主要的启动逻辑
-├── go.sum
-├── main.go
-├── handlers
-│   └── api.go			# 实现了与LLM API的交互逻辑，包括发送请求和解析响应
-├── models
-│   └── request.go		# 定义了请求模型，用于将用户输入转换为LLM API所需的格式
+├── client.py		    # Web Server Python Version 
+├── client.go		    # Web Server Golang Version
 ├── templates
 │   └── index.html		# 前端界面的HTML模板文件，包含用户输入和LLM输出的显示
+│   └── script.js		# 处理一些响应的文件
 └── static
     └── style.css		# 前端界面的CSS样式文件，用于美化界面
 ```
@@ -37,26 +28,21 @@ BUPT 2023 autumn operating system course big assignment - LLM local deployment p
 1. 克隆项目到本地：
 
 ```
-git clone xxx
+git clone git@github.com:Conqueror712/BUPT-OS-LLM.git
 ```
 
 2. 进入项目目录：
 
 ```
-cd xxx
+cd BUPT-OS-LLM
 ```
 
-3. 安装依赖：
+3. 配置LLM API密钥：
 
-```
-go mod download
-```
+在`没想好`文件中，将以下代码行中的`YOUR_API_KEY`替换为你的LLM API密钥：
 
-4. 配置LLM API密钥：
-
-在handlers/api.go文件中，将以下代码行中的YOUR_API_KEY替换为你的LLM API密钥：
-
-> 获取密钥可以前往：URL
+> 获取密钥可以前往：[URL](https://platform.baichuan-ai.com/console/apikey)  点击**创建API Key**即可获取
+> 
 
 ```
 const apiKey = "YOUR_API_KEY"
@@ -67,7 +53,7 @@ const apiKey = "YOUR_API_KEY"
 1. 在命令行中执行以下命令启动应用程序：
 
 ```
-go run main.go
+没想好
 ```
 
 2. 在浏览器中访问http://localhost:13240，即可打开应用程序的前端界面。
@@ -75,7 +61,7 @@ go run main.go
 ## 使用示例
 
 1. 在输入框中输入你的问题或文本。
-2. 点击"提交"按钮，应用程序将发送请求到LLM API并等待响应。
+2. 点击**"发送"**按钮，应用程序将发送请求到LLM API并等待响应。
 3. LLM生成的文本将显示在界面的输出框中。
 4. 可以重复上述步骤，与LLM进行对话、提问等。
 
