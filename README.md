@@ -39,7 +39,15 @@ cd BUPT-OS-LLM
 pip install -r requirements.txt
 ```
 
-4. 启动：
+4. 下载 LFS 文件（这可能需要一段时间，如果遇到网络问题请使用镜像 https://aliendao.cn/models/THUDM/chatglm2-6b ）
+
+```
+git lfs install
+git clone https://huggingface.co/THUDM/chatglm2-6b
+```
+
+
+5. 启动：
 
 ```
 # 网页 Version
