@@ -49,7 +49,7 @@ python web.py
 python terminal.py
 ```
 
-![image-20231028202619466](D:\Project-2023\BUPT-OS-LLM\img\01.png)
+![image](img/01.png)
 
 ## 使用示例
 
@@ -57,11 +57,11 @@ python terminal.py
 
 网页 Version：
 
-![image-20231028205115836](D:\Project-2023\BUPT-OS-LLM\img\02.png)
+![image](img/02.png)
 
 终端 Version：
 
-![image-20231028205005372](D:\Project-2023\BUPT-OS-LLM\img\03.png)
+![image](img/03.png)
 
 ## 贡献
 
